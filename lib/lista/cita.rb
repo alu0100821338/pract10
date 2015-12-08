@@ -6,7 +6,7 @@ module Cita
 
  
   class Cita
-      
+      include Enumerable
     def initialize()
         @L=Lista::Lista.new
         

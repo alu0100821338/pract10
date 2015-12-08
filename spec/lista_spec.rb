@@ -13,12 +13,14 @@ describe '# PRUEBA' do
    it "# comprobando insertar desde cita" do
       C = Cita::Cita.new()
       C.insertar(LIBRO_A)
+      expect(C).to_not be_nil
    end
    
    it "# comprobando mostrar desde cita" do
       C1 = Cita::Cita.new()
       C1.insertar(LIBRO_A)
       C1.mostrar()
+      #se comprueba con lo que sale por pantalla
    end
    
    it "# comprobando insertar varios libros desde cita" do
@@ -26,6 +28,10 @@ describe '# PRUEBA' do
       C2.insertar(LIBRO_A)
       C2.insertar(LIBRO_B)
       C2.insertar(LIBRO_C)
-      C2.mostrar()
+      
+     expect(C2).to_not be_nil
+   end
+    it "# comprobando mayúscula la primera letra nombres" do
+     
    end
 end
