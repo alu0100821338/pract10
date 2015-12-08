@@ -7,7 +7,7 @@ describe '# PRUEBA' do
     LIBRO_C = Libro::Libro.new()
     LIBRO_A.setA(%w{cristina tosco Vanessa gonzalez Laura martin})
     LIBRO_B.setA(%w{Pepito Grillo})
-    LIBRO_C.setA(%w{Ana angeles})
+    LIBRO_C.setA(%w{ana angeles})
     
     
    it "# comprobando insertar desde cita" do
@@ -32,6 +32,6 @@ describe '# PRUEBA' do
      expect(C2).to_not be_nil
    end
     it "# comprobando mayúscula la primera letra nombres" do
-     
+     expect(LIBRO_C.geta).to eq("[\"Ana\", \"Angeles\"]")
    end
 end
