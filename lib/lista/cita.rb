@@ -21,7 +21,7 @@ module Cita
                      valor.nombrerevista[i + 1]=valor.nombrerevista[i + 1].capitalize
                     end
                  end
-              puts valor.nombrerevista
+             # puts valor.nombrerevista
         end
         
          if valor.instance_of?Libro::Periodico
@@ -32,17 +32,18 @@ module Cita
                      valor.articulo[i + 1]=valor.articulo[i + 1].capitalize
                     end
                  end
-              puts valor.articulo
+              #puts valor.articulo
         end
         
         
-        if valor.instance_of? Libro::Libro
-         # valor.t[0][0]="#{valor.t[0].capitalize}"
-              
+        if valor.instance_of?Libro::Libro
+                   # valor.t[0][0]="#{valor.t[0][0].capitalize}"
+
         cant=valor.a.length
         copia=valor.a
-      
-        valor.a= "#{valor.a[1].capitalize} #{valor.a[0][0].capitalize}."
+       # puts valor.t[0][0]
+     valor.t= valor.t.capitalize
+        valor.a= "#{valor.a[1].capitalize}, #{valor.a[0][0].capitalize}."
         if cant > 2
            for i in(2..(cant-1))
                 if i%2 == 0  #los elementos pares
