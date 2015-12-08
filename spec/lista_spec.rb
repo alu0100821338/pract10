@@ -8,7 +8,8 @@ describe '# PRUEBA' do
     LIBRO_A.setA(%w{cristina tosco Vanessa gonzalez Laura martin})
     LIBRO_B.setA(%w{Pepito Grillo})
     LIBRO_C.setA(%w{ana lopez})
-    
+   # LIBRO_.setT("el poder de los números primos")
+     r1=Libro::Revista.new("el poder de los números primos")
     
    it "# comprobando insertar desde cita" do
       C = Cita::Cita.new()
@@ -31,7 +32,16 @@ describe '# PRUEBA' do
       
      expect(C2).to_not be_nil
    end
-    it "# comprobando mayúscula la primera letra nombres y colocación " do
+   
+    it "# comprobando mayúscula la primera letra nombres y colocación inversa" do
      expect(LIBRO_C.geta).to eq("Lopez A.")
+   end
+   
+   it "# comprobando inicial título mayuscula" do
+    
+   end
+   
+   it "# comprobando orden alfabético: APELLIDO autor, fecha, titulo" do
+     expect(r1.get).to eq("El Poder De Los Número Primos")
    end
 end
