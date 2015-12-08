@@ -87,8 +87,17 @@ module Libro
       return "#{@vect}"
     end
     
+   # def formatea()
+  #      puts "#{@t}, #{@a}\n#{@s}\n#{@e}; #{@ed} #{@f}\n#{@vect}"
+   #     return "#{@t}, #{@a}\n#{@s}\n#{@e}; #{@ed} #{@f}\n#{@vect}"
+  # end
+    
     def formatea()
-        puts "#{@t}, #{@a}\n#{@s}\n#{@e}; #{@ed} #{@f}\n#{@vect}"
+        #puts "#{@t}, #{@a}\n#{@s}\n#{@e}; #{@ed} #{@f}\n#{@vect}"
+        puts "#{@a} (#{@f}). Título: #{@t}"
+        puts "   (#{@ed}) (#{@s}). #{@e}"
+        puts " "
+        
         return "#{@t}, #{@a}\n#{@s}\n#{@e}; #{@ed} #{@f}\n#{@vect}"
     end
 #############################################################
@@ -112,7 +121,7 @@ module Libro
   
   class Revista < Libro
    # include Comparable
-    attr_reader :nombrerevista
+    attr_accessor :nombrerevista
     
     def initialize(n)
       @nombrerevista=n
@@ -137,7 +146,7 @@ module Libro
   
   class Periodico < Libro
    # include Comparable
-    attr_reader :articulo
+    attr_accessor :articulo
     def initialize(columna)
       @articulo=columna
       super()
@@ -161,7 +170,7 @@ module Libro
   
   class Documento < Libro
    # include Comparable
-    attr_reader :url
+    attr_accessor :url
     def initialize(dir)
       @url=dir
       super()
