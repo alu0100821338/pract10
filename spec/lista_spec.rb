@@ -20,4 +20,12 @@ describe '# PRUEBA' do
       C1.insertar(LIBRO_A)
       C1.mostrar()
    end
+   
+   it "# comprobando insertar varios libros desde cita" do
+      C2 = Cita::Cita.new()
+      C2.insertar(LIBRO_A)
+      C2.insertar(LIBRO_B)
+      C2.insertar(LIBRO_C)
+      C2.mostrar()
+   end
 end
