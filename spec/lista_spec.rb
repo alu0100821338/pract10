@@ -14,4 +14,10 @@ describe '# PRUEBA' do
       C = Cita::Cita.new()
       C.insertar(LIBRO_A)
    end
+   
+   it "# comprobando mostrar desde cita" do
+      C1 = Cita::Cita.new()
+      C1.insertar(LIBRO_A)
+      C1.mostrar()
+   end
 end
