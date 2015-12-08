@@ -16,6 +16,9 @@ module Cita
         @L.insert(valor)
     end
     
+    def mostrar
+        @L.mostrar 
+    end
  
   end
   
