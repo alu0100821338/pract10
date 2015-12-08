@@ -1,7 +1,7 @@
 require "lista/version"
 require "lista/lista"
 require "lista/libro"
-require "lista/cita"
+#require "lista/cita"
 
 
 module Lista
