@@ -123,5 +123,5 @@ C7.insertar(LIBRO_C_)
        expect(Co.L_ordenada[3]).to eq(LIBRO_E1)
         expect(Co.L_ordenada[4]).to eq(LIBRO_A1)
     #puts b_l.to_s
-  end
+  end  
 end
